@@ -17,3 +17,6 @@
 
 /* bicicletas - article */
 @import './bicicletas/bicicletas-lista.css';
+
+/* seguros - article */
+@import './seguros/seguros.css';
