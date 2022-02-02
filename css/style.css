@@ -5,6 +5,7 @@
 @import './utilidades/cores.css';
 
 @import './global/header.css';
+@import './global/footer.css';
 
 /* Utilitários - Botão */
 @import './utilidades/componentes.css';
