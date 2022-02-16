@@ -17,3 +17,23 @@ function parametersURL(param) {
   if(element) element.checked = true;
 }
 param.forEach(parametersURL)
+
+// perguntas frequentes
+
+const perguntas = document.querySelectorAll('.perguntas button');
+
+function mostrarPergunta(event) {
+  const pergunta = event.currentTarget;
+  const controls = pergunta.getAttribute('aria-controls');
+  const resposta = document.getElementById(controls);
+  
+  resposta.classList.toggle('ativa');
+  const ativa = resposta.classList.contains('ativa')
+  pergunta.setAttribute('aria-expanded', ativa);
+}
+
+function ativarPerguntas(pergunta) {
+  pergunta.addEventListener('click', mostrarPergunta);
+}
+
+perguntas.forEach(ativarPerguntas);
