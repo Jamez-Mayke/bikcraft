@@ -10,6 +10,7 @@
 /* Utilitários - Botão */
 @import './utilidades/componentes.css';
 @import './utilidades/formulario.css';
+@import './utilidades/anima.css';
 
 /* Home - main */
 @import './home/introducao.css';

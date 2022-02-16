@@ -53,3 +53,8 @@ function clicarImagem(img) {
   img.addEventListener('click', trocarImagem);
 }
 galeria.forEach(clicarImagem);
+
+//plugin animar
+if(window.SimpleAnime) {
+  new SimpleAnime();
+}
